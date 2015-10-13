@@ -68,8 +68,7 @@ We do what others in the python community have established:
 Import Statements
 ^^^^^^^^^^^^^^^^^
 
-We expand on PEP8_'s suggestions for import statements.  These greatly improve 
-ones ability to ascertain what is and isn't available in a given file.
+We follow PEP8_'s suggestions for import statements.
 
 Import one module per import statement::
 
@@ -80,14 +79,13 @@ not::
 
     import os, sys
 
-Separate imports into groups with a line of whitespace: 
-standard library; Django (or framework); third-party; and local imports::
+Separate imports into groups with a line of whitespace:
+standard library; third-party; and local imports::
 
     import os
     import sys
 
     from django.conf import settings
-
     import pyquery
 
     from myapp import models, views
@@ -130,7 +128,7 @@ Lastly, when importing things into your namespace from a package use an alphabet
     from models import DATE, TIME, Dog, Kitteh, upload_pets
 
 
-If possible though, it may be easier to import the entire package, especially for methods 
+If possible though, it may be easier to import the entire package, especially for methods
 as it help answers the question, "where did ``you`` come from?"
 
 Bad::
